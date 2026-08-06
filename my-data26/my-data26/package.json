@@ -1,0 +1,9 @@
+{
+  "name": "day-lai-xe-gan-ban",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "web:dev": "npm run dev --workspace=@daylaixe/web",
+    "mobile:start": "npm run start --workspace=@daylaixe/mobile"
+  }
+}

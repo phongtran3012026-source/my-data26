@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Dạy Lái Xe Gần Bạn",
+    "slug": "day-lai-xe-gan-ban",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#16A34A"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "vn.daylaixegannban.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Ứng dụng cần vị trí của bạn để đề xuất giáo viên dạy lái xe gần khu vực bạn nhất."
+      }
+    },
+    "android": {
+      "package": "vn.daylaixegannban.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#16A34A"
+      },
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        { "locationAlwaysAndWhenInUsePermission": "Cho phép Dạy Lái Xe Gần Bạn dùng vị trí của bạn để tìm giáo viên gần nhất." }
+      ]
+    ]
+  }
+}
